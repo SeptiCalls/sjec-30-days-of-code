@@ -1,7 +1,7 @@
 m = int(input("M: "))
 n = int(input("N: "))
 
-if (m % 2 == 0 and n % 3 == 0 or m % 3 == 0 and n % 2 == 0):
+if ((m * n) % 6 == 0 and m > 1 and n > 1):
     print("Yes")
 else:
     print("No")
