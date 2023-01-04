@@ -1,17 +1,6 @@
-def main():
-    n = int(input("Marbles: "))
-    n -= 10
-    res = fact(n + 4) / (fact(n) * fact(4))
-    res = int(res)
-    print(res)
-
-
-def fact(n):
-    prod = 1
-    for i in range(1, n + 1):
-        prod *= i
-    return prod
-
-
-if __name__ == "__main__":
-    main()
+import math
+n = int(input("Marbles: "))
+n -= 10
+res = math.factorial(n + (5 - 1)) / (math.factorial(n) * math.factorial(5 - 1))
+res = int(res)
+print(res)
